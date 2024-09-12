@@ -1,0 +1,27 @@
+{% extends 'master.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<style>
+    #banner {
+        background-image: url('{{ url_for('static', filename='images/banner-img2.jpg') }}');
+    }
+</style>
+
+<section id="banner">
+    <div class="container padding-medium-2">
+        <div class="hero-content ">
+            <h2 class="display-1 fw-bold mt-5 mb-0">Error 404 !!!</h2>
+            <p class="fw-semibold">Sorry! Page that you are looking for is not available.</p>
+            <nav class="breadcrumb">
+                <a class="breadcrumb-item nav-link" href="#">Home</a>
+                <a class="breadcrumb-item nav-link" href="#">Pages</a>
+                <span class="breadcrumb-item active" aria-current="page">Error</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+{%  endblock %}
