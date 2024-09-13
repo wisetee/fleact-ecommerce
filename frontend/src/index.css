@@ -531,6 +531,13 @@ iconify-icon.arrow-icon {
   mt-1
 }
 
+.product-title {
+  @apply
+  font-sans
+  font-normal
+  text-xl
+}
+
 .product-store .product-item {
   position: relative;
 }

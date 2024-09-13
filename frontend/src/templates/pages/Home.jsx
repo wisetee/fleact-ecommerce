@@ -2,6 +2,7 @@ import bgImage from "../../assets/images/banner-img1.jpg";
 import { Icon } from "@iconify/react";
 import NewArrival from "../NewArrival";
 import CategorySection from "../CategorySection";
+import ServiceSection from "../ServiceSection";
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
         </div>
       </section>
 
+      <ServiceSection />
       <NewArrival />
       <CategorySection />
     </>
