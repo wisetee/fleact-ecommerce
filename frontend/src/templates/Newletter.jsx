@@ -6,17 +6,17 @@ const Newletter = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="container py-28">
-        <div className="grid md:grid-cols-6 md:gap-16">
-          <div className="md:col-span-2 md:col-start-2 md:ml-4 mb-8 md:mb-0 px-3">
+        <div className="grid md:grid-cols-12 lg:grid-cols-8 md:gap-4 lg:gap-6">
+          <div className="md:col-span-6 lg:col-span-3 md:col-start-2 lg:col-start-2 mb-8 md:mb-0 px-3">
             <h2 className="text-3xl register-text">
-              Get <span className="italic">20% OFF</span> on
+              Get <span className="italic">20% OFF</span><br />on
               your first purchase
             </h2>
             <p className="mt-4">
               Sign up for our newsletter and never miss any offers.
             </p>
           </div>
-          <div className="md:col-span-2 md:ml-4 px-3">
+          <div className="md:col-span-4 lg:col-span-3 lg:ml-4 px-3">
             <form>
               <div className="mb-3">
                 <input
