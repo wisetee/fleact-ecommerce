@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-5">
           {/* Logo and Social Links */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 mb-8">
             <div className="footer-menu">
               <img src={Logo} alt="logo" className="w-32" />
               <div className="social-links mt-6">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8 md:mb-0">
+          <div className="mb-8 md:mb-0">
             <div className="footer-menu">
               <h6 className="text-white font-bold text-lg mb-6">Quick Links</h6>
               <ul className="menu-list">
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
 
           {/* About Links */}
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8 md:mb-0">
+          <div className="mb-8 md:mb-0">
             <div className="footer-menu">
               <h6 className="text-white font-bold text-lg mb-6">About</h6>
               <ul className="menu-list">
@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
 
           {/* Help Center */}
-          <div className="w-full md:w-1/4 lg:w-1/6 mb-8 md:mb-0">
+          <div className="mb-8 md:mb-0">
             <div className="footer-menu">
               <h6 className="text-white font-bold text-lg mb-6">Help Center</h6>
               <ul className="menu-list">
