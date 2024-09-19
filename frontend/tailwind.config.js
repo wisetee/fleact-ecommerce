@@ -7,9 +7,11 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Jost', 'sans-serif'],
+        josefin: ['Josefin Sans', 'sans-serif']
       },
       colors: {
         gray: {
+          300: '#212529bf',
           500: '#747474',
           800: '#212529'
         }

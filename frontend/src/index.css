@@ -298,6 +298,10 @@ h6 {
   text-transform: capitalize;
 }
 
+h4 {
+ font-size: calc(1.275rem + .3vw)
+}
+
 a {
   text-decoration: none;
   color: rgb(40, 40, 40)
@@ -347,6 +351,7 @@ a {
     padding-top: 10rem;
     padding-bottom: 6rem;
   }
+
 }
 
 /* arrow hover effect */
@@ -484,7 +489,41 @@ a {
   uppercase
 }
 
-iconify-icon.arrow-icon {
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+.breadcrumb {
+  --bs-breadcrumb-padding-x: 0;
+  --bs-breadcrumb-padding-y: 0;
+  --bs-breadcrumb-margin-bottom: 1rem;
+  --bs-breadcrumb-bg: ;
+  --bs-breadcrumb-border-radius: ;
+  --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+  --bs-breadcrumb-item-padding-x: 0.5rem;
+  --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+  margin-bottom: var(--bs-breadcrumb-margin-bottom);
+  font-size: var(--bs-breadcrumb-font-size);
+  list-style: none;
+  background-color: var(--bs-breadcrumb-bg);
+  border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+.breadcrumb-item.active {
+  @apply
+  text-gray-300
+}
+
+.iconify-icon.arrow-icon {
   font-size: 1.3rem;
 }
 
@@ -512,8 +551,8 @@ iconify-icon.arrow-icon {
 
 .product-card {
   @apply
-  relative 
-  mx-3
+  relative
+  mb-6
 }
 
 .product-badge {
@@ -535,7 +574,8 @@ iconify-icon.arrow-icon {
   @apply
   font-sans
   font-normal
-  text-xl
+  text-base
+  md:text-xl
 }
 
 .product-store .product-item {
@@ -746,13 +786,37 @@ a.blog-read:hover {
   border-bottom: 1px solid #8a8a8a;
 }
 
+.filters-wrapper {
+  width: 100%;
+  margin-left: -100%;
+  scrollbar-width: none;
+  @apply
+  overflow-x-hidden
+  overflow-y-scroll
+  duration-300
+  ease-in-out
+}
+
+.filters-wrapper.show {
+  margin-left: 0;
+}
+
+.filters-wrapper .nav-link {
+  @apply
+  font-semibold
+}
+
+@media only screen and (min-width: 768px) {
+  .filters-wrapper {
+    width: 260px;
+    margin-left: -260px;
+  }
+}
+
 /* ------ Pagination ------*/
 .pagination .page-numbers {
-  width: 30px;
-  height: 30px;
   display: flex;
   align-items: center;
-  color: var(--bs-body-color);
   padding: 0 10px;
   line-height: 1.4;
   transition: 0.9s all;
