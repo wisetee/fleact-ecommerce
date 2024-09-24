@@ -277,7 +277,6 @@ body {
   .btn-outline-primary,
   .btn-outline-dark,
   .btn-dark {
-    padding: 0.6rem 1.5rem;
     font-size: 1rem;
   }
 }
@@ -891,6 +890,13 @@ Account page style start
 .nav-tabs .nav-item.show .nav-link.account-tab,
 .nav-tabs .nav-link.account-tab {
   color: var(--bs-body-color);
+  @apply
+  capitalize
+  mx-4
+  px-4
+  py-2
+  text-xl
+  font-semibold
 }
 
 .nav-tabs .nav-item.show .nav-link.account-tab,
