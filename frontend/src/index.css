@@ -938,6 +938,27 @@ Wishlist page style start
 }
 
 /*--------------------------------------------------------------
+Cart page style start
+--------------------------------------------------------------*/
+.cart-items-wrapper > div > div {
+  @apply
+  flex
+  flex-col 
+  justify-center 
+  items-start
+}
+
+.cart-items-wrapper .item {
+  @apply
+  grid
+  grid-cols-4 
+  grid-rows-2
+  md:grid-rows-1
+  md:grid-cols-6 
+  gap-x-3 
+  mb-4
+}
+/*--------------------------------------------------------------
 Styles page style start
 --------------------------------------------------------------*/
 .chocolat-wrapper {
